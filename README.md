@@ -16,13 +16,13 @@ created with TexMaker:  http://www.xm1math.net/texmaker/
 
 ## Usage
 
-- 1. Download repo
-- 2. Go into `template1`
-- 3. Open `thesis.tex`
-- 4. Press the Button `Quick Build` (TexMaker)
-- 5. Change to `BibTeX` and press the button
-- 6. Change back to `Quick Build` and press the button
-- 7. PDF output should have been created successfully
+-  Download repo
+-  Go into `template1`
+-  Open `thesis.tex`
+-  Press the Button `Quick Build` (TexMaker)
+-  Change to `BibTeX` and press the button
+-  Change back to `Quick Build` and press the button
+-  PDF output should have been created successfully
 
 
 ## Project Layout
