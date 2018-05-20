@@ -54,6 +54,7 @@ created with TexMaker:  http://www.xm1math.net/texmaker/
         locking_flag.tex
         packages.tex
         page_style.tex
+    thesis.tex
 
 /template2
     /bibtex
@@ -63,6 +64,8 @@ created with TexMaker:  http://www.xm1math.net/texmaker/
     /images
 
     /inputs
+
+    thesis.tex
 
 LICENSE
 README.md
