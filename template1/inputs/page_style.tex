@@ -7,49 +7,29 @@
 \geometry{paper=a4paper,left=30mm,right=30mm,top=10mm,bottom=40mm}
 
 
-%% head line
-%\setkomafont{pageheadfoot}{\upshape}
-%\setkomafont{pagehead}{\slshape}
-%\setkomafont{headsepline}{}
-%\setlength{\headheight}{21mm}
-%\setheadsepline[text]{0.4pt}
-%\pagestyle{scrheadings}
-%\ihead*{\textit{\headmark}}
-%\ohead{\includegraphics[scale=0.12]{images/page_style/OTH_Regensburg_Logo_aktuell.jpg}}
-%
-%
-%% foot line
-%\ofoot*{\thepage}
-%\cfoot*{\textit{Christian Bierschneider}}
-%\setkomafont{footsepline}{}
-%\setfootsepline[text]{0.4pt}
 
-
-
-% Kopf- und Fußzeilen
+% head and foot line
 %-------------------------------------------------------------
 \pagestyle{scrheadings}
 \renewcommand*{\chapterpagestyle}{scrheadings}
-%\renewcommand*{\chapterpagestyle}	% Kopf- und Fußzeile auch auf %Kapitelanfangsseiten
-\renewcommand{\headfont}{\normalfont}			% Schriftform der Kopfzeile
+
+\renewcommand{\headfont}{\normalfont}			% font family of the header
 
 
-% Kopfzeile
+% head line
 %-------------------------------------------------------------
 %\ihead{\small{\textsc{\titelum}}}  
 \ihead{\textit{\headmark}}
 %\ihead{\headmark}
 \ohead{\includegraphics[scale=0.12]{images/page_style/OTH_Regensburg_Logo_aktuell.jpg}}
-\setlength{\headheight}{21mm} 					% Höhe der Kopfzeile
-%\setheadwidth[0pt]{textwithmarginpar} 			% Kopfzeile über den Text hinaus verbreitern
-\setheadsepline[text]{0.4pt} 					% Trennlinie unter Kopfzeile
+\setlength{\headheight}{21mm} 					% height of the header
+
+\setheadsepline[text]{0.4pt} 					% dividing line under header
 
 
-% Fußzeile
+% foot line
 %-------------------------------------------------------------
-%\setfootsepline[text]{0.4pt} 					% Trennlinie über Fußzeile
-%\ifoot{\textit{Matrikelnr: 2830146}}
-%\cfoot{\textit{Christian Bierschneider}}
+%\setfootsepline[text]{0.4pt} 					% dividing line over foot
 \cfoot{\textit{\pagemark}}
 %\ofoot{}
 
