@@ -12,9 +12,16 @@ A repository for thesis templates with Latex
 </div>
 <br>
 
-created with texmaker:  http://www.xm1math.net/texmaker/
+created with TexMaker:  http://www.xm1math.net/texmaker/
 
-
+## Usage
+1. Download repo
+2. Go into `template1`
+3. Open `thesis.tex`
+4. Press the Button `Quick Build` (TexMaker)
+5. Change to `BibTeX` and press the button
+6. Change back to `Quick Build`
+7. PDF output should have been created successfully
 
 
 ## Project Layout
