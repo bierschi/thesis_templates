@@ -1,0 +1,89 @@
+
+% line spacing 1.5 lines
+\onehalfspacing
+
+% side edges
+\setlength{\topskip}{\ht\strutbox} 
+\geometry{paper=a4paper,left=30mm,right=30mm,top=10mm,bottom=40mm}
+
+
+%% head line
+%\setkomafont{pageheadfoot}{\upshape}
+%\setkomafont{pagehead}{\slshape}
+%\setkomafont{headsepline}{}
+%\setlength{\headheight}{21mm}
+%\setheadsepline[text]{0.4pt}
+%\pagestyle{scrheadings}
+%\ihead*{\textit{\headmark}}
+%\ohead{\includegraphics[scale=0.12]{images/page_style/OTH_Regensburg_Logo_aktuell.jpg}}
+%
+%
+%% foot line
+%\ofoot*{\thepage}
+%\cfoot*{\textit{Christian Bierschneider}}
+%\setkomafont{footsepline}{}
+%\setfootsepline[text]{0.4pt}
+
+
+
+% Kopf- und Fußzeilen
+%-------------------------------------------------------------
+\pagestyle{scrheadings}
+\renewcommand*{\chapterpagestyle}{scrheadings}
+%\renewcommand*{\chapterpagestyle}	% Kopf- und Fußzeile auch auf %Kapitelanfangsseiten
+\renewcommand{\headfont}{\normalfont}			% Schriftform der Kopfzeile
+
+
+% Kopfzeile
+%-------------------------------------------------------------
+%\ihead{\small{\textsc{\titelum}}}  
+\ihead{\textit{\headmark}}
+%\ihead{\headmark}
+\ohead{\includegraphics[scale=0.12]{images/page_style/OTH_Regensburg_Logo_aktuell.jpg}}
+\setlength{\headheight}{21mm} 					% Höhe der Kopfzeile
+%\setheadwidth[0pt]{textwithmarginpar} 			% Kopfzeile über den Text hinaus verbreitern
+\setheadsepline[text]{0.4pt} 					% Trennlinie unter Kopfzeile
+
+
+% Fußzeile
+%-------------------------------------------------------------
+%\setfootsepline[text]{0.4pt} 					% Trennlinie über Fußzeile
+%\ifoot{\textit{Matrikelnr: 2830146}}
+%\cfoot{\textit{Christian Bierschneider}}
+\cfoot{\textit{\pagemark}}
+%\ofoot{}
+
+
+
+
+
+% chapter number very large
+\makeatletter
+ \renewcommand*{\chapterformat}{ 
+   \begingroup
+     \setlength{\unitlength}{1mm}
+     \begin{picture}(10,10)(0,5) 
+       \setlength{\fboxsep}{0pt} 
+       %\put(0,0){\framebox(20,40){}}% 
+       %\put(0,20){\makebox(20,20){\rule{20\unitlength}{20\unitlength}}}% 
+       \put(10,15){\line(1,0){\dimexpr 
+           \textwidth-20\unitlength\relax\@gobble}}% 
+       \put(0,0){\makebox(10,20)[r]{% 
+           \fontsize{28\unitlength}{28\unitlength}\selectfont\thechapter 
+           \kern-.05em
+         }}
+       \put(10,15){\makebox(\dimexpr 
+           \textwidth-20\unitlength\relax\@gobble,\ht\strutbox\@gobble)[l]{ 
+             \ \normalsize\color{black}\chapapp~\thechapter\autodot 
+           }} 
+     \end{picture} 
+   \endgroup 
+}
+\makeatother
+
+%set fonts for nicer pdf view
+\IfFileExists{lmodern.sty}{\usepackage{lmodern}}
+  {\usepackage[scaled=0.92]{helvet}
+    \usepackage{mathptmx}
+    \usepackage{courier} }
+%\fi
