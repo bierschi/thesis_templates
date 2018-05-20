@@ -2,11 +2,11 @@
 
 A repository for thesis templates with Latex
 
-- [Template 1](https://github.com/bierschi/thesis_templates#Template_1)
+- [Template 1](https://github.com/bierschi/thesis_templates#template-1)
 
 ## Template 1
 
-<div align="left">
+<div align="left"; style="background-color:rgba(0,0,0, 0.047055)">
 <br>
   <img src="repo_images/thesis_template_1.png" alt="example" width="515" height="730">
 </div>
