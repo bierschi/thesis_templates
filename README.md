@@ -4,7 +4,8 @@ A repository for thesis templates with Latex
 
 - [Template 1](https://github.com/bierschi/thesis_templates#template-1)
 - [Template 2](https://github.com/bierschi/thesis_templates#template-2)
-
+- [Usage](https://github.com/bierschi/thesis_templates#usage)
+- [Project Layout](https://github.com/bierschi/thesis_templates#project-layout)
 ## Template 1
 
 <div align="left"; style="background-color:rgba(0,0,0, 0.047055)">
