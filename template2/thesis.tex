@@ -1,0 +1,86 @@
+
+\documentclass[
+	a4paper,									% Papierformat
+	12pt,										% Schriftgröße
+	oneside,									% einseitiges Dokument
+	titlepage,									% es gibt eine Titelseite
+	parskip=half,								% Abstand zwischen Absätzen (halbe Zeile)
+	listof=totoc,								% Verzeichnisse im Inhaltsverzeichnis aufführen
+	bibliography=totoc,							% Literaturverzeichnis im Inhaltsverzeichnis aufführen
+	index=totoc,								% Index im Inhaltsverzeichnis aufführen
+	captions=tableheading,						% Beschriftungen von Tabellen unterhalb ausgeben
+	final,										% Status des Dokuments (final/draft) draft -> vereinfachte Ausgabe
+	toc=listof,
+]{scrreprt}
+
+
+	
+\input{inputs/Packages}							% Packages laden
+\input{inputs/Befehle}
+\input{inputs/Symbolverzeichnis}					% Einstellung Symbol/Abkverzeichnis
+\input{inputs/Glossar}							% Definition Abk/Symbole
+\input{inputs/Seitenstil}						% Seitenlayout
+\input{inputs/Meta}								% Metainformationen des Dokuments
+
+%-------------------------------------------------------------
+% Dokument
+%-------------------------------------------------------------
+\begin{document}
+
+	\input{inputs/Deckblatt}						% Deckblatt
+
+\pagenumbering{Roman}
+
+	
+
+
+	\input{inputs/Erklaerung}					% Erklärung
+	
+	\input{inputs/Sperrvermerk}					% Sperrvermerk
+	
+	\input{inputs/Abstract}						% Abstract
+	
+	
+	\printglossary[type=\acronymtype,
+		style=long,
+		nonumberlist,
+		title=Abkürzungsverzeichnis
+	]
+	
+	\printglossary[type=symbolslist,
+		style=symbver,
+		nonumberlist,
+		title=Symbolverzeichnis
+	]
+	
+	
+	\tableofcontents							% Inhaltsverzeichnis
+		
+	
+\clearpage										
+\pagenumbering{arabic}
+
+
+
+	%Kapitel der Bachelorarbeit
+
+	\input{chapters/1_Einleitung}
+	\input{chapters/2_Kapitel}
+	\input{chapters/3_Kapitel}
+	\input{chapters/4_Kapitel}
+	\input{chapters/5_Kapitel}
+	\input{chapters/6_Kapitel}
+	
+	
+	
+	\listoffigures								% Abbildungsverzeichnis
+	\listoftables								% Tabellenverzeichnis
+	
+	%Kapitel Anhang
+	\input{inputs/Anhang}
+	
+	\bibliographystyle{natdin}					%Style des 		Literaturverzeichnisses
+	\bibliography{bibtex/bibtex_thesis}	%Literaturverzeichnis
+		
+
+\end{document}}

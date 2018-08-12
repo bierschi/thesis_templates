@@ -1,0 +1,67 @@
+%-------------------------------------------------------------
+% Seitenstil
+%-------------------------------------------------------------
+
+
+% Zeilenabstand 1,5 Zeilen
+%-------------------------------------------------------------
+\onehalfspacing
+%\doublespacing
+
+% Seitenränder
+%-------------------------------------------------------------
+\setlength{\topskip}{\ht\strutbox} % behebt Warnung von geometry
+\geometry{paper=a4paper,left=30mm,right=30mm,top=13mm,bottom=45mm}
+
+
+% Kopf- und Fußzeilen
+%-------------------------------------------------------------
+\pagestyle{scrheadings}
+\renewcommand*{\chapterpagestyle}{scrheadings}	% Kopf- und Fußzeile auch auf Kapitelanfangsseiten
+\renewcommand{\headfont}{\normalfont}			% Schriftform der Kopfzeile
+
+
+% Kopfzeile
+%-------------------------------------------------------------
+%\ihead{\small{\textsc{\titelum}} \\[1ex] 
+\ihead{\textit{\headmark}}
+\chead{}
+%\chead{\pagemark}
+\ohead{\includegraphics[scale=0.12]{\logosmall}}
+\setlength{\headheight}{21mm} 					% Höhe der Kopfzeile
+%\setheadwidth[0pt]{textwithmarginpar} 			% Kopfzeile über den Text hinaus verbreitern
+\setheadsepline[text]{0.4pt} 					% Trennlinie unter Kopfzeile
+
+
+% Fußzeile
+%-------------------------------------------------------------
+\setfootsepline[text]{0.4pt} 					% Trennlinie über Fußzeile
+%\ifoot{\textit{Matrikelnr: 2830146}}
+\cfoot{\textit{Name des Autors}}
+\ofoot{\textit{\pagemark}}
+%\ofoot{}
+
+
+% sonstige typographische Einstellungen
+%-------------------------------------------------------------
+
+\frenchspacing 									% erzeugt ein wenig mehr Platz hinter einem Punkt
+
+
+% Schusterjungen und Hurenkinder vermeiden (heißt wirklich so, vgl. Wikipedia)
+%-------------------------------------------------------------
+\clubpenalty = 10000
+\widowpenalty = 10000 
+\displaywidowpenalty = 10000
+
+
+%% Quellcode-Ausgabe formatieren
+%%-------------------------------------------------------------
+%\lstset{numbers=left, numberstyle=\tiny, numbersep=5pt, breaklines=true}
+%\lstset{emph={square}, emphstyle=\color{red}, emph={[2]root,base}, emphstyle={[2]\color{blue}}}
+
+
+% Fußnoten fortlaufend durchnummerieren
+%-------------------------------------------------------------
+\counterwithout{footnote}{chapter}
+\addtokomafont{caption}{\normalsize}

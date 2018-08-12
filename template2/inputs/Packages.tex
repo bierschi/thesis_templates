@@ -1,0 +1,163 @@
+%-------------------------------------------------------------
+% Packages
+%-------------------------------------------------------------
+\usepackage[
+	automark,								 	% Kapitel in Kopfzeile
+	headsepline,								% Trennlinie unter Kopfzeile
+	ilines										% Trennlinie linksbündig ausrichten
+]{scrpage2}
+
+\usepackage[ngerman]{babel}						% Sprachanpassungen
+
+\usepackage{makeidx}
+\usepackage[utf8]{inputenc}					% erweiterter Eingabezeichensatz
+\usepackage[T1]{fontenc}						% erweiterter T1 Zeichenvorrat
+\usepackage{textcomp} 							% Euro-Zeichen etc.
+%\usepackage[textstyle]{SIunits}					% \micro für µ oder \degree für °
+\usepackage{unitsdef}							% \micro für µ oder \degree für ° und weitere selbst definierte Einheiten
+\usepackage{wasysym}							% + Unterstützung von Einheiten im Text
+\usepackage{lmodern}							% bessere Fonts (manuell installieren cm-super)
+\usepackage{relsize}							% Schriftgröße relativ festlegen
+
+%\usepackage{cmbright}							% Schriftart CM bright
+
+\usepackage[dvips,final]{graphicx}				% Einbinden von jpg ermöglichen
+\graphicspath{{Grafik/}}						% hier liegen die Bilder des Dokuments
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{sidecap}							% seitliche captions
+\usepackage{pstool}								% Einbinden von Matlab figures + .tex (matlabfrag)
+\usepackage[acronym,toc,automake]{glossaries}			% Glossar, Symbolverzeichnis
+
+
+\usepackage{setspace}							% einfache Festlegung des Zeilenabstands: \onehalfspacing, \doublespacing, \singlespacing
+\usepackage{geometry}							% Seitenränder festlegen
+\usepackage{chngcntr}							% fortlaufendes Durchnummerieren der Fußnoten
+
+\usepackage{multirow}
+
+\usepackage{paralist}							% kompaktere Listen, \begin{compactitem} anstatt \beginn{itemize}
+\usepackage{longtable}							% Für Tabellen (ähnlich tabular) allerdings auch mehrseitige Tabellen möglich
+\usepackage{array}								% weitere Möglichkeiten in Tabelle
+
+
+\usepackage{xspace}								% Leerzeichen hinter parameterlosen Makros werden nicht als Makroendzeichen interpretiert
+
+
+
+\usepackage[									% Zitierstil
+	numbers,
+	nonamebreak
+]{natbib}
+
+\usepackage[									% PDF-Verlinkungen
+    bookmarks,
+    bookmarksopen=true,
+    colorlinks=true,							% diese Farbdefinitionen zeichnen Links im PDF farblich aus
+    linkcolor=black, 							% einfache interne Verknüpfungen
+    anchorcolor=blue,							% Ankertext
+    citecolor=blue, 							% Verweise auf Literaturverzeichniseinträge im Text
+    filecolor=magenta, 							% Verknüpfungen, die lokale Dateien öffnen
+    menucolor=red, 								% Acrobat-Menüpunkte
+    urlcolor=blue, 
+												%% diese Farbdefinitionen sollten für den Druck verwendet werden (alles schwarz):
+%    linkcolor=black,							% einfache interne Verknüpfungen
+%    anchorcolor=black, 						% Ankertext
+%    citecolor=black, 							% Verweise auf Literaturverzeichniseinträge im Text
+%    filecolor=black, 							% Verknüpfungen, die lokale Dateien öffnen
+%    menucolor=black, 							% Acrobat-Menüpunkte
+%    urlcolor=black, 
+    backref,
+    plainpages=false, 							% zur korrekten Erstellung der Bookmarks
+    pdfpagelabels, 								% zur korrekten Erstellung der Bookmarks
+    hypertexnames=false,
+    breaklinks=true,					% zur korrekten Erstellung der Bookmarks
+    %linktocpage 								% Seitenzahlen anstatt Text im Inhaltsverzeichnis verlinken
+]{hyperref}
+
+
+%\hypersetup{
+%    pdftitle={\titel},
+%    pdfauthor={\autor},
+%    pdfcreator={\autor},
+%    pdfsubject={\titel},
+%    pdfkeywords={\titel},
+%}
+
+\usepackage{blindtext}							% Blindtext Deutsch
+\usepackage{lipsum}								% Blindtext "lorem ipsum"
+\usepackage{pdfpages}
+
+%-------------------------------------------------------------
+% Backup
+%-------------------------------------------------------------
+
+
+% Befehle aus AMSTeX für mathematische Symbole z.B. \boldsymbol \mathbb
+%-------------------------------------------------------------
+\usepackage{amsmath,amsfonts}
+\usepackage{pifont,mathptmx,charter,courier}
+%\usepackage[scaled]{helvet}
+
+
+% Weitere
+%-------------------------------------------------------------
+%\usepackage{ifthen}							% bei der Definition eigener Befehle benötigt
+%\usepackage{todonotes}							% definiert u.a. Befehle \todo und \listoftodos
+
+%\usepackage{makeidx}							% Index / Einträge im Quelltext markieren durch \index
+												% An der Stelle an der Der Index erscheinen soll \printindex
+%\makeindex										% texmaker mac, Benutzer Befehle "/usr/texbin/makeindex" %
+
+%\usepackage{multicol}							% Erweiterte Funktionalität für Spalten
+%\usepackage{multirow}							% In Tabelle: Zelle über mehrere Zeilen
+%\usepackage{multicolumn}						% In Tabelle: Zelle über mehrere Spalten
+%\usepackage{colortbl}							% Farbige Tabellen
+%\usepackage{rotating}							% gedrehte Tabelle
+
+%\usepackage{floatflt}							% umfließen von Bildern
+
+\usepackage{url}								% URL verlinken, lange umbrechen (das macht auch hyperref)
+
+%\usepackage{bibgerm}							% Zitierstil
+%\usepackage[numbers,square]{natbib}			% Zitierstil
+%\usepackage{natbib}							% Zitierstil
+%\usepackage{cite}								% Zitierstil
+%\newcommand{\shortcite}[1]{\cite{#1}}			% Zitierstil
+
+%\usepackage{ragged2e}
+%\newcolumntype{w}[1]{>{\raggedleft\hspace{0pt}}p{#1}}
+%\usepackage{lscape}
+
+%\usepackage{color}
+\usepackage{xcolor}							% Farben definieren
+\definecolor{hellgelb}{rgb}{1,1,0.9}
+\definecolor{hellblau}{rgb}{1,0.8,0}
+\definecolor{hellgrau}{rgb}{0.8,0.8,0.8}
+\definecolor{colKeys}{rgb}{0,0,1}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{RGB}{0,139,0}
+\definecolor{colString}{rgb}{0,0.5,0}
+
+\usepackage{listings}							% Einbinden von Programmcode
+\lstset{
+    float=hbp,
+    basicstyle=\scriptsize\bfseries\ttfamily\color{black},%\small\smaller,
+    identifierstyle=\color{colIdentifier},
+    keywordstyle=\color{blue},
+    stringstyle=\color{colString},
+    commentstyle=\color{gray},
+    columns=flexible,
+    tabsize=2,
+    frame=single,
+    extendedchars=true,
+    showspaces=false,
+    showstringspaces=false,
+    numbers=left,
+    numberstyle=\tiny,
+    breaklines=true,
+    backgroundcolor=\color{hellgelb},
+    breakautoindent=true,
+    caption=Testprogramm,
+    language=python
+}

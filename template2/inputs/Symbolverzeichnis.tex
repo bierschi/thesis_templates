@@ -1,0 +1,56 @@
+% Erstellung eines Index und Abkürzungsverzeichnisses aktivieren
+%-------------------------------------------------------------
+
+
+\makeindex %														%Ein eigenes Symbolverzeichnis erstellen
+
+%\renewcommand*{\glstextformat}[1]{\textit{#1}}
+%\renewcommand*{\firstacronymfont}[1]{\normalfont{#1}}
+%\renewcommand*{\acronymfont}[1]{\normalfont{#1}}
+%\defglsdisplay{\emph{#1#4}}
+%\defglsdisplayfirst{\emph}
+
+%\renewcommand*{\firstacronymfont}[1]{#1}
+%\renewcommand*{\acronymfont}[1]{\emph{#1}}
+
+
+\newglossary[slg]{symbolslist}{syi}{syg}{Symbolverzeichnis}		%Style Symbolverzeichnis definieren
+\newglossarystyle{symbver}{										% put the glossary in a longtable environment:
+\renewenvironment{theglossary}
+{\begin{longtable}{p{.10\textwidth}p{.7\textwidth}p{.1\textwidth}}}
+{\end{longtable}}
+\renewcommand*{\glossaryheader}{{Symbol}& {Beschreibung} & {Einheit}\\ \hline}
+
+\renewcommand*{\glossaryentryfield}[4]{\glstarget{##1}\\[0.1cm]{##2}&{##3}&{##4}}
+																% \\[0.2cm] Zeilenabstand zwischen Einträgen
+\renewcommand*{\glossarysubentryfield}[6]{\glossaryentryfield{##2}{##3}{##4}{##5}}
+\renewcommand*{\glsgroupskip}{}}
+
+\renewcommand*{\glspostdescription}{}							% Den Punkt am Ende jeder Beschreibung deaktivieren
+
+%\renewcommand*{\glstextformat}[1]{\textit{#1}}
+\renewcommand*{\firstacronymfont}[1]{\normalfont{#1}}
+%\renewcommand*{\acronymfont}[1]{\normalfont{#1}}
+%\defglsdisplay{\emph{#1#4}}
+\defglsdisplayfirst{\emph}
+
+\newglossaryentry{greekletter}{name={\textbf{\rlap{griechisches Alphabet}}},description={}}
+																% trennt Symbolverzeichnis in latein und griechisch
+
+\newglossaryentry{romanletter}{name={\textbf{\rlap{lateinisches Alphabet}}},description={}}
+																% trennt Symbolverzeichnis in latein und griechisch
+
+\makeglossaries
+
+		
+
+% Einrichtung unter TeXnicCenter!!!
+% Als Postprozess (Ausgabe, Ausgabeprofile definieren, Nachbearbeiten Einstellen:
+% Anwendung: Programm\MiKTeX\bin\makeindex.exe
+% Argumente:	für	Abkürzungsverzeichnis:		-s "%tm.ist" -t "%tm.alg" -o "%tm.acr" "%tm.acn"
+%					Glossar:					-s "%tm.ist" -t "%tm.glg" -o "%tm.gls" "%tm.glo"
+%					Symbolverzeichnis:			-s "%tm.ist" -t "%tm.slg" -o "%tm.syi" "%tm.syg"
+
+% Einrichtung unter TexMaker Mac
+% Benutzer > Benutzer Befehle > "/usr/texbin/makeglossaries" %
+

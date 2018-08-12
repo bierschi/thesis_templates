@@ -1,0 +1,1033 @@
+%-------------------------------------------------------------
+% Abkürzungs- & Symbolverzeichnis
+%-------------------------------------------------------------
+% Abkürzungen
+
+% A
+\newacronym{ascii}{ASCII}{American Standard Code for Information Interchange}
+
+
+% B
+
+\newacronym{bss}{BSS}{Basestation Subsystem}
+
+% C
+\newacronym{c2c}{C2C}{Car-to-Car Kommunikation}
+
+% D
+\newacronym{dlc}{DLC}{Data Length Code}
+
+% E
+\newacronym{ecu}{ECU}{Electronic Control Unit}
+
+% F
+\newacronym{fas}{FAS}{Fahrerassistenzsysteme}
+% G
+\newacronym{gps}{GPS}{Global Positioning System}
+
+% H
+\newacronym{hdmi}{HDMI}{High Definition Multimedia Interface}
+% I
+\newacronym{iot}{IoT}{Internet of Things}
+
+%J
+\newacronym{json}{JSON}{JavaScript Object Notation}
+% L
+\newacronym{lte}{LTE}{Long Term Evolution}
+
+% M
+\newacronym{mqtt}{MQTT}{Message Queue Telematry Transport}
+
+% N
+\newacronym{nmea}{NMEA}{National Marine Electronics Association}
+
+% O
+\newacronym{oasis}{OASIS}{Organization for the Advancement of Structured Information Standards}
+\newacronym{obd}{OBD}{On-Board-Diagnose}
+% P
+\newacronym{psd}{PSD}{Prädiktiven Streckendaten}
+
+% Q
+\newacronym{qos}{QoS}{Qualitiy of Service}
+% R
+
+% S
+\newacronym{sid}{SID}{Service Identifier}
+
+% U
+\newacronym{uart}{UART}{Universal Asynchronous Receiver and Transmitter}
+
+% V
+\newacronym{volt}{V}{Volt}
+
+% W
+
+
+% Symbole
+%-------------------------------------------------------------
+% Latainische Buchstaben
+%-------------------------------------------------------------
+% A
+\newglossaryentry{symb:a}{
+		name=\ensuremath{a},
+		symbol=\meterpersquaresecond,
+		description={Beschleunigung},
+		parent=romanletter,
+		sort=symbola,
+		type=symbolslist}
+		
+% B
+\newglossaryentry{symb:B}{
+		name=\ensuremath{B},
+		symbol=\hertz,
+		description={Bandbreite},
+		parent=romanletter,
+		sort=symbolB,
+		type=symbolslist}
+		
+% C
+\newglossaryentry{symb:cor}{
+		name=\ensuremath{cor},
+		symbol=,
+		description={Korrelationskoeffizient},
+		parent=romanletter,
+		sort=symbolcor,
+		type=symbolslist}
+
+% D d_{VR}
+	\newglossaryentry{symb:d}{
+		name=\ensuremath{d},
+		symbol=\meterpervolt,
+		description={piezoelektrische Ladungskonstante},
+		parent=romanletter,
+		sort=symbold,
+		type=symbolslist}
+		
+		\newglossaryentry{symb:D}{
+		name=\ensuremath{D},
+		symbol=\coulombpersquaremeter,
+		description={elektrische Verschiebung},
+		parent=romanletter,
+		sort=symbolD,
+		type=symbolslist}
+		
+		\newglossaryentry{symb:dv}{
+		name=\ensuremath{d_v},
+		symbol=,
+		description={Verlustfaktor, Dämpfung},
+		parent=romanletter,
+		sort=symboldv,
+		type=symbolslist}
+		
+	\newglossaryentry{symb:vecd}{
+		name=\ensuremath{\vec{d}},
+		symbol=\meter,
+		description={Distanzvektor},
+		parent=romanletter,
+		sort=symboldvr,
+		type=symbolslist}
+% E
+	\newglossaryentry{symb:E}{
+		name=\ensuremath{E},
+		symbol=\voltpermeter,
+		description={Elektrisches Feld},
+		parent=romanletter,
+		sort=symbolE,
+		type=symbolslist}	
+		
+% F
+		\newglossaryentry{symb:fgu}{
+		name=\ensuremath{f_{gu}},
+		symbol=\hertz,
+		description={untere Grenzfrequenz},
+		parent=romanletter,
+		sort=symbolfgu,
+		type=symbolslist}
+		
+		\newglossaryentry{symb:fgo}{
+		name=\ensuremath{f_{go}},
+		symbol=\hertz,
+		description={obere Grenzfrequenz},
+		parent=romanletter,
+		sort=symbolfgo,
+		type=symbolslist}	
+	
+		\newglossaryentry{symb:fs}{
+		name=\ensuremath{f_s},
+		symbol=\hertz,
+		description={Serienresonanz},
+		parent=romanletter,
+		sort=symbolfs,
+		type=symbolslist}
+		
+	\newglossaryentry{symb:fp}{
+		name=\ensuremath{f_p},
+		symbol=\hertz,
+		description={Parallelresonanz},
+		parent=romanletter,
+		sort=symbolfp,
+		type=symbolslist}
+		
+		\newglossaryentry{symb:f0}{
+		name=\ensuremath{f_0},
+		symbol=\hertz,
+		description={Anregungsfrequenz des Piezoelementes},
+		parent=romanletter,
+		sort=symbolf0,
+		type=symbolslist}
+		
+		
+	\newglossaryentry{symb:fclk}{
+		name=\ensuremath{f_{clk}},
+		symbol=\hertz,
+		description={Taktfrequenz},
+		parent=romanletter,
+		sort=symbolfclk,
+		type=symbolslist}
+% G
+
+\newglossaryentry{symb:g}{
+		name=\ensuremath{g},
+		symbol=\g,
+		description={Erdbeschleunigung},
+		parent=romanletter,
+		sort=symbolg,
+		type=symbolslist}
+		
+	\newglossaryentry{symb:ge}{
+		name=\ensuremath{g_e},
+		symbol=\voltmeterpernewton,
+		description={Piezoelektrische Spannungskonstante},
+		parent=romanletter,
+		sort=symbolge,
+		type=symbolslist}
+		
+		
+		
+% H
+	\newglossaryentry{symb:he}{
+		name=\ensuremath{\vec{h}_{e}},
+		symbol=\meter,
+		description={Headingvektor Ego-Fahrzeug},
+		parent=romanletter,
+		sort=symbolhe,
+		type=symbolslist}
+
+	\newglossaryentry{symb:ht}{
+		name=\ensuremath{\vec{h}_{t}},
+		symbol=\meter,
+		description={Headingvektor Target},
+		parent=romanletter,
+		sort=symbolht,
+		type=symbolslist}
+% K	
+	\newglossaryentry{symb:k}{
+		name=\ensuremath{k},
+		symbol=\newtonpermeter,
+		description={Federkonstante},
+		parent=romanletter,
+		sort=symbolk,
+		type=symbolslist}
+		
+		\newglossaryentry{symb:kk}{
+		name=\ensuremath{k_k},
+		symbol=,
+		description={Piezoelektrischer Kopplungsfaktor},
+		parent=romanletter,
+		sort=symbolkk,
+		type=symbolslist}
+		
+		\newglossaryentry{symb:kkp}{
+		name=\ensuremath{k_{kp}},
+		symbol=,
+		description={Piezoelektrischer planare Kopplungsfaktor},
+		parent=romanletter,
+		sort=symbolkk,
+		type=symbolslist}
+		
+%L
+	\newglossaryentry{symb:l}{
+		name=\ensuremath{l},
+		symbol=\meter,
+		description={Länge},
+		parent=romanletter,
+		sort=symboll,
+		type=symbolslist}
+		
+		
+% P
+	\newglossaryentry{symb:P}{
+		name=\ensuremath{P},
+		symbol=\coulombpersquaremeter,
+		description={Polarisation},
+		parent=romanletter,
+		sort=symbolP,
+		type=symbolslist}
+		
+		\newglossaryentry{symb:Ps}{
+		name=\ensuremath{P_s},
+		symbol=\watt,
+		description={Schaltverlustleistung},
+		parent=romanletter,
+		sort=symbolPs,
+		type=symbolslist}
+		
+\newglossaryentry{symb:Pd}{
+		name=\ensuremath{P_d},
+		symbol=\watt,
+		description={Druchlassverlustleistung},
+		parent=romanletter,
+		sort=symbolPd,
+		type=symbolslist}
+
+%Q		
+		\newglossaryentry{symb:Q}{
+		name=\ensuremath{Q},
+		symbol=,
+		description={Schwingkreisgüte},
+		parent=romanletter,
+		sort=symbolq,
+		type=symbolslist}	
+		
+% R 	
+
+		\newglossaryentry{symb:Rv}{
+		name=\ensuremath{R_{v}},
+		symbol=\volt,
+		description={ADC Auflösung der gemessenen Spannung},
+		parent=romanletter,
+		sort=symbolRv,
+		type=symbolslist}	
+		
+% S	
+	\newglossaryentry{symb:S}{
+		name=\ensuremath{S},
+		symbol=\meter,
+		description={Mechanische Dehnung},
+		parent=romanletter,
+		sort=symbolS,
+		type=symbolslist}
+		
+		\newglossaryentry{symb:s}{
+		name=\ensuremath{s},
+		symbol=\squaremeterpernewton,
+		description={mechanische Elastizitätskonstante},
+		parent=romanletter,
+		sort=symbols,
+		type=symbolslist}
+		
+% T 
+		
+	\newglossaryentry{symb:t}{
+		name=\ensuremath{t_t},
+		symbol=\celsius,
+		description={Temperatur},
+		parent=romanletter,
+		sort=symbolt,
+		type=symbolslist}
+	
+	\newglossaryentry{symb:Ts}{
+		name=\ensuremath{T_{0}},
+		symbol=\second,
+		description={Periodendauer},
+		parent=romanletter,
+		sort=symbolts,
+		type=symbolslist}
+		
+	\newglossaryentry{symb:T}{
+		name=\ensuremath{T},
+		symbol=\newtonpersquaremeter,
+		description={mechansiche Spannung},
+		parent=romanletter,
+		sort=symbolT,
+		type=symbolslist}
+
+% U
+		\newglossaryentry{symb:ud}{
+		name=\ensuremath{U_d},
+		symbol=\volt,
+		description={Ansteuerungsspannung des Piezoelements},
+		parent=romanletter,
+		sort=symbolud,
+		type=symbolslist}
+
+		
+% V
+	\newglossaryentry{symb:v}{
+		name=\ensuremath{v},
+		symbol=\meterpersecond,
+		description={Geschwindigkeit},
+		parent=romanletter,
+		sort=symbolv,
+		type=symbolslist}
+		
+	\newglossaryentry{symb:vecve}{
+		name=\ensuremath{\vec{v}_{e}},
+		symbol=\meterpersecond,
+		description={Geschwindigkeitsvektor Ego-Fahrzeug},
+		parent=romanletter,
+		sort=symbolve,
+		type=symbolslist}
+		
+	\newglossaryentry{symb:vr}{
+		name=\ensuremath{v_{r}},
+		symbol=\meterpersecond,
+		description={Relativgeschwindigkeit},
+		parent=romanletter,
+		sort=symbolvr,
+		type=symbolslist}
+		
+		
+	\newglossaryentry{symb:vecvr}{
+		name=\ensuremath{\vec{v}_{r}},
+		symbol=\meterpersecond,
+		description={Vektor Relativgeschwindigkeit},
+		parent=romanletter,
+		sort=symbolvr,
+		type=symbolslist}
+		
+	\newglossaryentry{symb:vecvte}{
+		name=\ensuremath{\vec{v}_{te}},
+		symbol=\meterpersecond,
+		description={Geschwindigkeitskomponente in Ego-Kursrichtung},
+		parent=romanletter,
+		sort=symbolvte,
+		type=symbolslist}	
+
+	\newglossaryentry{symb:vt}{
+		name=\ensuremath{v_{t}},
+		symbol=\meterpersecond,
+		description={Geschwindigkeit Target},
+		parent=romanletter,
+		sort=symbolvt,
+		type=symbolslist}
+		
+	\newglossaryentry{symb:vecvt}{
+		name=\ensuremath{\vec{v}_{t}},
+		symbol=\meterpersecond,
+		description={Geschwindigkeitsvektor Target},
+		parent=romanletter,
+		sort=symbolvt,
+		type=symbolslist}	
+		
+
+%-------------------------------------------------------------
+% Griechisch Buchstaben
+%-------------------------------------------------------------
+	\newglossaryentry{symb:alpha}{
+		name=\ensuremath{\alpha},
+		symbol=\perkelvin,
+		description={Thermischer Längenausdehnungskoeffizient},
+		parent=greekletter,
+		sort=symbolealpha,
+		type=symbolslist}
+		
+	\newglossaryentry{symb:alphahv}{
+		name=\ensuremath{\alpha _{HV}},
+		symbol=\perkelvin,
+		description={Thermischer Längenausdehnungskoeffizient für hohe Steuerspannungen},
+		parent=greekletter,
+		sort=symbolealphahv,
+		type=symbolslist}
+		
+		\newglossaryentry{symb:alphanv}{
+		name=\ensuremath{\alpha _{NV}},
+		symbol=\perkelvin,
+		description={Thermischer Längenausdehnungskoeffizient für niedrige Steuerspannungen},
+		parent=greekletter,
+		sort=symbolealphahv,
+		type=symbolslist}
+		
+	\newglossaryentry{symb:betaVR}{
+		name=\ensuremath{\beta},
+		symbol=\degree,
+		description={Differenz der Heading},
+		parent=greekletter,
+		sort=symbolebetaVR,
+		type=symbolslist}
+		
+	\newglossaryentry{symb:epsilon}{
+		name=\ensuremath{\epsilon},
+		symbol=\faradpermeter,
+		description={Dielektrizitätszahl},
+		parent=greekletter,
+		sort=symboleepsilon,
+		type=symbolslist}
+		
+	\newglossaryentry{symb:epsilon0}{
+		name=\ensuremath{\epsilon _{0}},
+		symbol=\faradpermeter,
+		description={Dielektrizitätszahl im Vakuum},
+		parent=greekletter,
+		sort=symboleepsilon,
+		type=symbolslist}
+		
+		
+	\newglossaryentry{symb:omegago}{
+		name=\ensuremath{\omega _{go}},
+		symbol=\persecond,
+		description={obere Grenzkreisfrequnez},
+		parent=greekletter,
+		sort=symboleomegago,
+		type=symbolslist}
+			
+	\newglossaryentry{symb:omegagu}{
+		name=\ensuremath{\omega_{gu}},
+		symbol=\persecond,
+		description={untere Grenzkreisfrequenz},
+		parent=greekletter,
+		sort=symboleomegagu,
+		type=symbolslist}
+
+	\newglossaryentry{symb:phie}{
+		name=\ensuremath{\varphi_{\textnormal{\textit{e}}}},
+		symbol=\degree,
+		description={Heading Ego},
+		parent=greekletter,
+		sort=symbolephie,
+		type=symbolslist}
+
+	\newglossaryentry{symb:phit}{
+		name=\ensuremath{\varphi_{\textnormal{\textit{t}}}},
+		symbol=\degree,
+		description={Heading Target},
+		parent=greekletter,
+		sort=symbolephit,
+		type=symbolslist}
+		
+		\newglossaryentry{symb:phi}{
+		name=\ensuremath{\phi},
+		symbol=\degree,
+		description={Phasenwinkel},
+		parent=greekletter,
+		sort=symbolephi,
+		type=symbolslist}
+
+\newglossaryentry{symb:theta}{
+		name=\ensuremath{\theta _e},
+		symbol=\degree,
+		description={Thermischer Längenausdehnungskoeffizient},
+		parent=greekletter,
+		sort=symboletheta,
+		type=symbolslist}
+	
+
+
+
+
+
+
+
+%%_____________________________________________________________
+%Verbräuche
+		
+%		\newglossaryentry{symb:rwdv}{
+%		name=\textnormal{\itshape{RWDV}},
+%		symbol=\kWhperkm,
+%		description={Reichweitendurchschnittsverbrauch},
+%		parent=romanletter,
+%		sort=symbolRWDV,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:rwdvgeschw}{
+%		name=\ensuremath{\textnormal{\itshape{RWDV}}_{\textnormal{\itshape{Geschw}}}},
+%		symbol=\kWhperkm,
+%		description={Geschwindigkeitsabhängiger Reichweitendurchschnittsverbrauch},
+%		parent=romanletter,
+%		sort=symbolRWDVv,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:zdvgrund}{
+%		name=\ensuremath{ \textnormal{\itshape{ZDV}}_{ \textnormal{\itshape{Grund}} }},
+%		symbol=\kWhperh,
+%		description={zeitlicher Grundverbrauch},
+%		parent=romanletter,
+%		sort=symbolRWDVv,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:zdv}{
+%		name=\textnormal{\itshape{ZDV}},
+%		symbol=\kWhperh,
+%		description={zeitlicher Durchschnittsverbrauch},
+%		parent=romanletter,
+%		sort=symbolZDV,
+%		type=symbolslist}
+%		
+%		
+%		\newglossaryentry{symb:rwdvsteig}{
+%		name=\ensuremath{\textnormal{\itshape{RWDV}}_{\textnormal{\itshape{Steig}}}},
+%		symbol=\kWhperkm,
+%		description={Steigungsmehr- oder minderverbrauch},
+%		parent=romanletter,
+%		sort=symbolRWDVsteig,
+%		type=symbolslist}
+%				
+%		\newglossaryentry{symb:rwdvnorm}{
+%		name=\ensuremath{\textnormal{\itshape{RWDV}}_{\textnormal{\itshape{gn}}}},
+%		symbol=\kWhperkm,
+%		description={geonormierter Reichweitendurchschnittsverbrauch},
+%		parent=romanletter,
+%		sort=symbolRWDVnorm,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:rwdvverkehr}{
+%		name=\ensuremath{\textnormal{\itshape{RWDV}}_{\textnormal{\itshape{vn}}}},
+%		symbol=\kWhperkm,
+%		description={verkehrsnormierter Reichweitendurchschnittsverbrauch},
+%		parent=romanletter,
+%		sort=symbolRWDVvnorm,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:K}{
+%		name=\ensuremath{K},
+%		symbol=\liter,
+%		description={Krafstoffmenge},
+%		parent=romanletter,
+%		sort=symbolK,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:Hu}{
+%		name=\ensuremath{H_u},
+%		symbol=\jperl,
+%		description={unterer Heizwert},
+%		parent=romanletter,
+%		sort=symbolK,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:snf}{
+%		name=\ensuremath{\textnormal{\itshape{SNF}}},
+%		symbol=\ensuremath{-},
+%		description={Steigungsnormierungsfaktor},
+%		parent=romanletter,
+%		sort=symbolSNF,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:vaf}{
+%		name=\ensuremath{\textnormal{\itshape{VAF}}},
+%		symbol=\ensuremath{-},
+%		description={Verkehrsausgleichsfaktor},
+%		parent=romanletter,
+%		sort=symbolVAF,
+%		type=symbolslist}
+%
+%%_____________________________________________________________
+%% Fahrwiderstände
+%
+%		\newglossaryentry{symb:Fbeschl}{
+%		name=\ensuremath{F_{Beschl}},
+%		symbol=\newton,
+%		description={Beschleunigungswiderstand},
+%		parent=romanletter,
+%		sort=symbolFbeschl,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:Fluft}{
+%		name=\ensuremath{F_{Luft}},
+%		symbol=\newton,
+%		description={Luftwiderstand},
+%		parent=romanletter,
+%		sort=symbolFluft,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:Fsteig}{
+%		name=\ensuremath{F_{Steig}},
+%		symbol=\newton,
+%		description={Steigungswiderstand},
+%		parent=romanletter,
+%		sort=symbolFsteig,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:Frad}{
+%		name=\ensuremath{F_{Rad}},
+%		symbol=\newton,
+%		description={Radwiderstand},
+%		parent=romanletter,
+%		sort=symbolFrad,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:Fk}{
+%		name=\ensuremath{F_{K}},
+%		symbol=\newton,
+%		description={Kurvenwiderstand},
+%		parent=romanletter,
+%		sort=symbolFk,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:Fschwall}{
+%		name=\ensuremath{F_{Schwall}},
+%		symbol=\newton,
+%		description={Schwallwiderstand},
+%		parent=romanletter,
+%		sort=symbolFschwall,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:Fr}{
+%		name=\ensuremath{F_{R}},
+%		symbol=\newton,
+%		description={Gesamtfahrwiderstand},
+%		parent=romanletter,
+%		sort=symbolFR,
+%		type=symbolslist}
+%
+%
+%%_____________________________________________________________
+%% Fahrzeugparameter
+%
+%		\newglossaryentry{symb:rdyn}{
+%		name=\ensuremath{r_{dyn}},
+%		symbol=\meter,
+%		description={dynamischer Reifenhalbmesser},
+%		parent=romanletter,
+%		sort=symbolrdyn,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:m}{
+%		name=\ensuremath{m},
+%		symbol=\kilogram,
+%		description={Fahrzeuggesamtmasse},
+%		parent=romanletter,
+%		sort=symbolm,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:cw}{
+%		name=\ensuremath{c_w},
+%		symbol=\ensuremath{-},
+%		description={Luftwiderstandsbeiwert},
+%		parent=romanletter,
+%		sort=symbolcw,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:al}{
+%		name=\ensuremath{A_L},
+%		symbol=\squaremeter,
+%		description={Fahrzeugstirnfläche},
+%		parent=romanletter,
+%		sort=symbolal,
+%		type=symbolslist}
+%
+%
+%%_____________________________________________________________
+%% Geschwindigkeit / Beschleunigung
+%
+%		
+%		\newglossaryentry{symb:vinfty}{
+%		name=\ensuremath{v_{\infty}},
+%		symbol=\meterpersecond,
+%		description={Anströmgeschwindigkeit},
+%		parent=romanletter,
+%		sort=symbolvinfty,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:vwind}{
+%		name=\ensuremath{v_{W}},
+%		symbol=\meterpersecond,
+%		description={Windgeschwindigkeit},
+%		parent=romanletter,
+%		sort=symbolvwind,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:vm}{
+%		name=\ensuremath{\bar{v}_m},
+%		symbol=\meterpersecond,
+%		description={mittlere momentane Fahrzeuggeschwindigkeit},
+%		parent=romanletter,
+%		sort=symbolvd,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:ax}{
+%		name=\ensuremath{a_x},
+%		symbol=\meterpersquaresecond,
+%		description={Fahrzeuglängsbeschleunigung},
+%		parent=romanletter,
+%		sort=symbolax,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:g}{
+%		name=\ensuremath{g},
+%		symbol=\g,
+%		description={Erdbeschleunigung},
+%		parent=romanletter,
+%		sort=symbolg,
+%		type=symbolslist}
+%
+%
+%%_____________________________________________________________
+%% Beiwerte etc.
+%
+%		\newglossaryentry{symb:B}{
+%		name=\ensuremath{B},
+%		symbol=\centimeter,
+%		description={Reifenbreite},
+%		parent=romanletter,
+%		sort=symbolB,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:NH}{
+%		name=\ensuremath{N\left(H\right)},
+%		symbol=\ensuremath{-},
+%		description={empirische Kenngröße als Funktion von H},
+%		parent=romanletter,
+%		sort=symbolNH,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:EH}{
+%		name=\ensuremath{E\left(H\right)},
+%		symbol=\ensuremath{-},
+%		description={empirische Kenngröße als Funktion von H},
+%		parent=romanletter,
+%		sort=symbolEH,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:fr}{
+%		name=\ensuremath{f_{R}},
+%		symbol=\ensuremath{-},
+%		description={Rollwiderstandsbeiwert},
+%		parent=romanletter,
+%		sort=symbolfr,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:frv}{
+%		name=\ensuremath{f_{R}\left(v\right)},
+%		symbol=\ensuremath{-},
+%		description={geschwindigkeitsabhängiger Rollwiderstandsbeiwert},
+%		parent=romanletter,
+%		sort=symbolfr,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:fr0}{
+%		name=\ensuremath{f_{R0}},
+%		symbol=\ensuremath{-},
+%		description={Koeffizient der Rollwiderstandsgleichung},
+%		parent=romanletter,
+%		sort=symbolfr0,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:fr1}{
+%		name=\ensuremath{f_{R1}},
+%		symbol=\ensuremath{-},
+%		description={Koeffizient der Rollwiderstandsgleichung},
+%		parent=romanletter,
+%		sort=symbolfr1,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:fr4}{
+%		name=\ensuremath{f_{R4}},
+%		symbol=\ensuremath{-},
+%		description={Koeffizient der Rollwiderstandsgleichung},
+%		parent=romanletter,
+%		sort=symbolfr4,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:fk}{
+%		name=\ensuremath{f_{K}},
+%		symbol=\ensuremath{-},
+%		description={Kurvenwiderstandsbeiwert},
+%		parent=romanletter,
+%		sort=symbolfk,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:rk}{
+%		name=\ensuremath{r_{k}},
+%		symbol=\meter,
+%		description={Kurvenradius},
+%		parent=romanletter,
+%		sort=symbolrk,
+%		type=symbolslist}
+%
+%
+%%_____________________________________________________________
+%% Strecke / Zeit / Verkehr
+%
+%		\newglossaryentry{symb:p}{
+%		name=\ensuremath{p},
+%		symbol=\%,
+%		description={Steigung},
+%		parent=romanletter,
+%		sort=symbolp,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:s}{
+%		name=\ensuremath{s},
+%		symbol=\meter,
+%		description={Strecke},
+%		parent=romanletter,
+%		sort=symbols,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:t}{
+%		name=\ensuremath{t},
+%		symbol=\second,
+%		description={Zeit},
+%		parent=romanletter,
+%		sort=symbolt,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:T}{
+%		name=\ensuremath{T},
+%		symbol=\second,
+%		description={Fahrdauer},
+%		parent=romanletter,
+%		sort=symbolT,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:S}{
+%		name=\ensuremath{S},
+%		symbol=\meter,
+%		description={Wegstrecke},
+%		parent=romanletter,
+%		sort=symbolS,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:M}{
+%		name=\ensuremath{M},
+%		symbol=\Fzperh,
+%		description={Verkehrsstärke / -fluss},
+%		parent=romanletter,
+%		sort=symbolM,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:D}{
+%		name=\ensuremath{D},
+%		symbol=\Fzperkm,
+%		description={Verkehrsdichte},
+%		parent=romanletter,
+%		sort=symbolD,
+%		type=symbolslist}
+%		
+%		
+%%_____________________________________________________________
+%% Leistung / Energie / Arbeit
+%
+%
+%		\newglossaryentry{symb:Pr}{
+%		name=\ensuremath{P_{R}},
+%		symbol=\watt,
+%		description={Bedarfsleistung an den Antriebsrädern},
+%		parent=romanletter,
+%		sort=symbolPr,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:Wr}{
+%		name=\ensuremath{W_{R}},
+%		symbol=\joule,
+%		description={Arbeit an den Antriebsrädern},
+%		parent=romanletter,
+%		sort=symbolWbed,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:Eel}{
+%		name=\ensuremath{E_{el}},
+%		symbol=\kWh,
+%		description={Elektrische Energie},
+%		parent=romanletter,
+%		sort=symbolEel,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:Pel}{
+%		name=\ensuremath{P_{el}},
+%		symbol=\watt,
+%		description={Elektrische Leistung},
+%		parent=romanletter,
+%		sort=symbolPel,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:E}{
+%		name=\ensuremath{E},
+%		symbol=\joule,
+%		description={Energie},
+%		parent=romanletter,
+%		sort=symbolE,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:W}{
+%		name=\ensuremath{W},
+%		symbol=\joule,
+%		description={Arbeit},
+%		parent=romanletter,
+%		sort=symbolW,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:P}{
+%		name=\ensuremath{P},
+%		symbol=\watt,
+%		description={Leistung},
+%		parent=romanletter,
+%		sort=symbolW,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:F}{
+%		name=\ensuremath{F},
+%		symbol=\newton,
+%		description={Kraft},
+%		parent=romanletter,
+%		sort=symbolF,
+%		type=symbolslist}
+%
+%		\newglossaryentry{symb:U}{
+%		name=\ensuremath{U},
+%		symbol=\volt,
+%		description={Elektrische Spannung},
+%		parent=romanletter,
+%		sort=symbolU,
+%		type=symbolslist}
+%		
+%		\newglossaryentry{symb:I}{
+%		name=\ensuremath{I},
+%		symbol=\ampere,
+%		description={Elektrischer Strom},
+%		parent=romanletter,
+%		sort=symbolI,
+%		type=symbolslist}
+%
+%
+%%-------------------------------------------------------------
+%% Griechische Buchstaben
+%%-------------------------------------------------------------
+%
+%\newglossaryentry{symb:thetared}{
+%name=\ensuremath{\Theta_{red,i}},
+%symbol=\kgmm,
+%description={Massenträgheitsmoment des Antriebsstrangs im Gang $i$},
+%parent=greekletter,
+%sort=symbolq,
+%type=symbolslist}
+%
+%\newglossaryentry{symb:rho}{
+%name=\ensuremath{\rho},
+%symbol=\kgpercubicmeter,
+%description={Luftdichte \textsl{(angenommen: bei 20°C ca. 1,2041 $\frac{kg}{m^3}$)}},
+%parent=greekletter,
+%sort=symbolr,
+%type=symbolslist}
+%
+%\newglossaryentry{symb:alpha}{
+%name=\ensuremath{\alpha},
+%symbol=\degree,
+%description={Steigungswinkel},
+%parent=greekletter,
+%sort=symbola,
+%type=symbolslist}
+%
+%\newglossaryentry{symb:tau}{
+%name=\ensuremath{\tau},
+%symbol=\degree,
+%description={Anströmwinkel der Luft zur Fahrzeuglängsrichtung},
+%parent=greekletter,
+%sort=symbolt,
+%type=symbolslist}
+%
+%\newglossaryentry{symb:etam}{
+%name=\ensuremath{\bar{\eta}_M},
+%symbol=\ensuremath{-},
+%description={mittlerer Motorwirkungsgrad},
+%parent=greekletter,
+%sort=symbolem,
+%type=symbolslist}
+%
+%\newglossaryentry{symb:etak}{
+%name=\ensuremath{\bar{\eta}_K},
+%symbol=\ensuremath{-},
+%description={mittlerer Wirkungsgrad des gesamten Kennungswandlers},
+%parent=greekletter,
+%sort=symboleek,
+%type=symbolslist}
