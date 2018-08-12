@@ -63,17 +63,45 @@ created with TexMaker:  http://www.xm1math.net/texmaker/
         locking_flag.tex
         packages.tex
         page_style.tex
+    /pdf_example
+        thesis_template_1.pdf
     thesis.tex
 
 /template2
     /bibtex
-
+        bibtex_thesis.bib
     /chapters
-
+        1_Einleitung.tex
+        2_Kapitel.tex
+        3_Kapitel.tex
+        4_Kapitel.tex
+        5_Kapitel.tex
+        6_Kapitel.tex
     /images
+        /Anhang
+        /Kapitel1
+        /Kapitel2
+        /Kapitel3
+        /Kapitel4
+        /Kapitel5
+        /Kapitel6
+        OTH_Regensburg_Logo_aktuell.jpg
 
     /inputs
-
+        Abstract.tex
+        Acronym.tex
+        Anhang.tex
+        Befehle.tex
+        Deckblatt.tex
+        Erklaerung.tex
+        Glossar.tex
+        Meta.tex
+        Packages.tex
+        Seitenstil.tex
+        Sperrvermerk.tex
+        Symbolverzeichnis.tex
+    /pdf_example
+        thesis_template_2.pdf
     thesis.tex
 
 LICENSE
